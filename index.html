@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Bucket List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      background-color: #4caf50;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    /* Bucket List Styling */
+    .bucket-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem auto;
+      max-width: 600px;
+    }
+
+    .bucket-list li {
+      background: #fff;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .bucket-list li i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    .fa-check {
+      color: Blue;
+    }
+
+    .fa-star {
+      color: gold;
+    }
+
+    /* Hover Effects */
+    .bucket-list li:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.02);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #4caf50;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .bucket-list li {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+      }
+
+      header, footer {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .bucket-list li {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Personal Bucket List</h1>
+  </header>
+  <main>
+    <ul class="bucket-list">
+      <li><i class="fa-solid fa-check"></i> visit Temple</li>
+      <li><i class="fa-solid fa-check"></i> Visit Korea</li>
+      <li><i class="fa-regular fa-star"></i> Learn Guitar</li>
+      <li><i class="fa-regular fa-star"></i> Learn Website development</li>
+    </ul>
+  </main>
+  <footer>
+    <p>© 2025 My Bucket List</p>
+  </footer>
+</body>
+</html>
